@@ -20,10 +20,12 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-th-list"></span>
                 </a>
-                <a href="#" class="brand"><img id="logo" src="assets/sapient-logo.png"></a>
+                <a href="#" class="brand">
+                    <img id="logo" src="assets/sapient-logo.png">
+                </a>
                 <div class="nav-collapse collapse">
                     <ul class="nav pull-right" id="nav-menu">
-                        <li >
+                        <li>
                             <a href="#">Home</a>
                         </li>
                         <li>
@@ -33,7 +35,7 @@
                             <a href="#">Projects</a>
                         </li>
                         <li>
-                            <a href="#"class="active">Contact Us</a>
+                            <a href="#" class="active">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -53,18 +55,18 @@
         <div class="row-fluid">
             <!--left carousel-->
             <div class="span2">
-                  <div id="desktop-carousel" class="carousel slide visible-desktop ">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="active item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-    </div>
+                <div id="desktop-carousel" class="carousel slide visible-desktop ">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="active item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+                </div>
             </div>
             <!--right content area-->
             <div class="span10">
@@ -83,12 +85,33 @@
                 <div class="container-fluid">
                     <span class="span8">
                         <div class="row-fluid">
-                            <form class="form-signin">
-                                <input type="text" class="input-block-level" placeholder="FirstName LastName">
-                                <input type="password" class="input-block-level" placeholder="Password">
-                                <input type="password" class="input-block-level" placeholder="Confirm Password">
-                                <input type="password" class="input-block-level" placeholder="Email">
-                                <input type="password" class="input-block-level" placeholder="Website">
+                            <form class="form-signin" id="form">
+                                <!--test field form-->
+                                <div class="form-control-group">
+                                    <div class="controls">
+                                        <input type="text" class="input-block-level" name="fullName" id="fullName" placeholder="FirstName LastName">
+                                    </div>
+                                </div>
+                                <div class="form-control-group">
+                                    <div class="controls">
+                                        <input type="text" class="input-block-level" name="password" id="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-control-group">
+                                    <div class="controls">
+                                        <input type="text" class="input-block-level" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                                    </div>
+                                </div>
+                                <div class="form-control-group">
+                                    <div class="controls">
+                                        <input type="text" class="input-block-level" name="email" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-control-group">
+                                    <div class="controls">
+                                        <input type="text" class="input-block-level" name="website" id="website" placeholder="Website">
+                                    </div>
+                                </div>
                                 <div class="alert alert-error">
                                     <h5>Invalid Website URL</h5>
                                 </div>
@@ -113,7 +136,9 @@
                             </li>
                         </ul>
                     </span>
-                     <span class="span7 "><button class="btn btn-default btn-lg btn-block mySubmit" type="submit">Submit</button></span>
+                    <span class="span7 ">
+                        <button class="btn btn-default btn-lg btn-block mySubmit" type="submit" disabled>Submit</button>
+                    </span>
                 </div>
             </div>
         </div>
@@ -130,10 +155,10 @@
             <div class="item"></div>
         </div>
     </div>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src=""></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/sapient.js"></script>
     <script src="js/script.js"></script>
-</body>
 
+</body>
 </html>

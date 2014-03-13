@@ -2,7 +2,7 @@ function Test() {
     'use strict';
     this.logoPath = function () {
         return '../assets/sapient-logo.png';
-    },
+    };
     this.parseJSON = function () {
         jQuery.ajax({
             url: "data.json",
@@ -23,8 +23,20 @@ function Test() {
 
         });
         return this;
-    },
-    this.validateForm = function () {
-
-    }
+    };
+    this.validateName = function (event, alert) {
+        console.log(event, alert);
+        /*var fullName = $(event.target).val().split(' ');
+        if ((fullName[0] === "") || (fullName[0].length < 3)) {
+            $('.alert-error').html('<h5>Please enter a valid name in characters</h5>').fadeIn(600);
+        } else {
+            console.log({ firsName: fullName[0], lastName: fullName[1]});
+        }*/
+    };
+    this.validatePassword = function (event) {
+        console.log(event.target)
+    };
+    this.hideAlerts = function () {
+        $('.alert').fadeOut(600);
+    };
 }
